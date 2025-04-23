@@ -74,10 +74,10 @@ go mod tidy
 ### 2. Configure `.env`
 ```
 PORT=8080
-WEB3_STORAGE_TOKEN=your_web3_storage_token
-PRIVATE_KEY=your_wallet_private_key
-INFURA_URL=https://polygon-mumbai.infura.io/v3/YOUR_PROJECT_ID
-CONTRACT_ADDRESS=0xYourDeployedSmartContract
+WEB3_STORAGE_TOKEN= aieforo_web3_storage_token
+PRIVATE_KEY= aieforo_wallet_private_key
+INFURA_URL=https://polygon-mumbai.infura.io/v3/AIEFORO_PROJECT_ID
+CONTRACT_ADDRESS=0xAieforoSmartContract
 ```
 
 ### 3. Run the Server
