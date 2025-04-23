@@ -147,14 +147,3 @@ This makes ESG reporting:
 
 ---
 
-## 📄 License
-
-This project is licensed under MIT — see [LICENSE](./LICENSE)
-
----
-
-## 💬 Questions or Help?
-
-Open an [issue](https://github.com/YOUR_ORG/brsr-backend/issues) or contact us at `team@yourcompany.com`.
-
-Built with ❤️ for ESG + Blockchain innovation.
