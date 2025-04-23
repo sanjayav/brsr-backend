@@ -66,7 +66,7 @@ This system allows **companies** to submit their structured BRSR reports, which 
 
 ### 1. Clone and Setup
 ```bash
-git clone https://github.com/YOUR_ORG/brsr-backend.git
+git clone https://github.com/Aieforo/brsr-backend.git
 cd brsr-backend
 go mod tidy
 ```
