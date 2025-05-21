@@ -1,54 +1,27 @@
 package utils
 
 import (
-    "testing"
+	"fmt"
+	"github.com/xeipuuv/gojsonschema"
 )
 
-func TestValidateBRSRInput_Valid(t *testing.T) {
-    validInput := map[string]interface{}{
-        "company": "Tata Motors",
-        "financialYear": "2023-24",
-        "sectionA": map[string]interface{}{
-            "A1": "Tata Motors",
-            "A2": "L28920MH1945PLC004520",
-        },
-        "sectionB": map[string]interface{}{
-            "B1": "Board has oversight",
-        },
-        "sectionC": map[string]interface{}{
-            "C1_P1_Q1": "Yes",
-            "C1_P2_Q1": "Yes",
-        },
-        "signatories": []interface{}{
-            map[string]interface{}{
-                "name": "John Doe",
-                "role": "CFO",
-                "date": "2024-04-20",
-                "signed": true,
-            },
-        },
-    }
+// ValidateBRSRJSON validates a BRSR input JSON against the brsr_schema.json
+func ValidateBRSRJSON(jsonPath string, schemaPath string) error {
+	schemaLoader := gojsonschema.NewReferenceLoader("file://" + schemaPath)
+	documentLoader := gojsonschema.NewReferenceLoader("file://" + jsonPath)
 
-    err := ValidateBRSRInput(validInput)
-    if err != nil {
-        t.Errorf("Expected valid input to pass, but got error: %v", err)
-    }
-}
+	result, err := gojsonschema.Validate(schemaLoader, documentLoader)
+	if err != nil {
+		return fmt.Errorf("validation error: %v", err)
+	}
 
-func TestValidateBRSRInput_Invalid(t *testing.T) {
-    invalidInput := map[string]interface{}{
-        "company": "Tata Motors",
-        // Missing required sectionB and sectionC
-        "financialYear": "2023-24",
-        "sectionA": map[string]interface{}{
-            "A1": "Tata Motors",
-        },
-    }
+	if !result.Valid() {
+		errMsg := "JSON validation failed:\n"
+		for _, desc := range result.Errors() {
+			errMsg += fmt.Sprintf("- %s\n", desc)
+		}
+		return fmt.Errorf(errMsg)
+	}
 
-    err := ValidateBRSRInput(invalidInput)
-    if err == nil {
-        t.Errorf("Expected error for invalid input but got nil")
-    } else {
-        t.Logf("Correctly failed validation: %v", err)
-    }
+	return nil
 }
