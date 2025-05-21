@@ -25,7 +25,7 @@ func main() {
 	// Add middleware
 	http.Handle("/", addCORS(router))
 
-	log.Printf("🚀 BRSR Backend server running on http://localhost:%s", port)
+	log.Printf("BRSR Backend server running on http://localhost:%s", port)
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
 		log.Fatalf("Failed to start server: %v", err)
