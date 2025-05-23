@@ -2,7 +2,7 @@ package models
 
 type Signatory struct {
     Name   string `json:"name"`
-    Role   string `json:"role"` // e.g., "CFO", "Compliance Officer"
+    Role   string `json:"role"` 
     Date   string `json:"date"`
     Signed bool   `json:"signed"`
 }
