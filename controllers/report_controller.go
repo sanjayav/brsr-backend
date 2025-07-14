@@ -38,7 +38,7 @@ func ReportHandler(w http.ResponseWriter, r *http.Request) {
 	defer os.Remove(tmpFile)
 
 	// Validate JSON schema
-	err = utils.ValidateBRSRJSON(tmpFile, "schemas/brsr_schema.json")
+	err = utils.ValidateBRSRJSON(tmpFile, "utils/brsr_full_schema.json")
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Schema validation failed: %v", err), http.StatusBadRequest)
 		return
