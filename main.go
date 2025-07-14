@@ -1,15 +1,11 @@
 package main
 
 import (
-	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
 	"os"
-	"path/filepath"
 
 	"brsr-backend/routes"
-	"brsr-backend/utils"
 )
 
 func main() {

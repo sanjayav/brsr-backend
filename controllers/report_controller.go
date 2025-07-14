@@ -8,9 +8,9 @@ import (
 	"os"
 	"time"
 
-	"brsr/models"
-	"brsr/services"
-	"brsr/utils"
+	"brsr-backend/models"
+	"brsr-backend/services"
+	"brsr-backend/utils"
 )
 
 // ReportHandler handles validated BRSR report submission
@@ -60,11 +60,7 @@ func ReportHandler(w http.ResponseWriter, r *http.Request) {
 	report.PDFPath = pdfPath
 
 	// Generate XML
-	xmlPath, err := services.GenerateXMLReport(report.Company, report.FinancialYear, report.SectionData, report.CompletedSections)
-	if err != nil {
-		http.Error(w, fmt.Sprintf("XML generation error: %v", err), http.StatusInternalServerError)
-		return
-	}
+	xmlPath := services.GenerateXMLReport(report.Company, report.FinancialYear, report.SectionData, report.CompletedSections)
 	report.XMLPath = xmlPath
 
 	// Upload to IPFS
@@ -84,11 +80,7 @@ func ReportHandler(w http.ResponseWriter, r *http.Request) {
 	report.TxHash = txHash
 
 	// Save to DB or local storage
-	err = services.SaveReport(report)
-	if err != nil {
-		http.Error(w, fmt.Sprintf("Saving report failed: %v", err), http.StatusInternalServerError)
-		return
-	}
+	services.SaveReport(report)
 
 	// Respond with success
 	w.Header().Set("Content-Type", "application/json")
