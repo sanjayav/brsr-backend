@@ -5,7 +5,7 @@ import (
 	"github.com/xeipuuv/gojsonschema"
 )
 
-// ValidateBRSRJSON validates a BRSR input JSON against the brsr_schema.json
+// ValidateBRSRJSON validates a BRSR input JSON against the brsr_full_schema.json
 func ValidateBRSRJSON(jsonPath string, schemaPath string) error {
 	schemaLoader := gojsonschema.NewReferenceLoader("file://" + schemaPath)
 	documentLoader := gojsonschema.NewReferenceLoader("file://" + jsonPath)
@@ -20,7 +20,7 @@ func ValidateBRSRJSON(jsonPath string, schemaPath string) error {
 		for _, desc := range result.Errors() {
 			errMsg += fmt.Sprintf("- %s\n", desc)
 		}
-		return fmt.Errorf(errMsg)
+		return fmt.Errorf("%s", errMsg)
 	}
 
 	return nil
