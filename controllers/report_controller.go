@@ -93,7 +93,7 @@ func ReportHandler(w http.ResponseWriter, r *http.Request) {
 	// Respond with success
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(map[string]interface{}{
-		"message":     " Report successfully processed and submitted.",
+		"message":     "Report successfully processed and submitted.",
 		"company":     report.Company,
 		"financial":   report.FinancialYear,
 		"ipfsHash":    report.IPFSHash,
