@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BRSR - Section A",
+  "type": "object",
+  "properties": {
+    "1. Details of the listed entity": {
+      "type": "string",
+      "description": "Name of the listed entity"
+    },
+    "2. Corporate Identity Number (CIN) of the Listed Entity": {
+      "type": "string",
+      "description": "Unique identifier assigned by the Ministry of Corporate Affairs"
+    },
+    "3. Year of Incorporation": {
+      "type": "string",
+      "description": "The year the company was established"
+    },
+    "4. Registered office address": {
+      "type": "string",
+      "description": "Official registered office address of the company"
+    },
+    "5. Corporate address": {
+      "type": "string",
+      "description": "Corporate operational address of the company"
+    },
+    "6. Email": {
+      "type": "string",
+      "format": "email",
+      "description": "Contact email address"
+    },
+    "7. Telephone": {
+      "type": "string",
+      "description": "Contact telephone number"
+    },
+    "8. Website": {
+      "type": "string",
+      "format": "uri",
+      "description": "Official website URL"
+    },
+    "9. Financial year for which reporting is being done": {
+      "type": "string",
+      "description": "E.g., FY 2023\u201324"
+    },
+    "10. Name and contact details of the person who may be contacted in case of any queries": {
+      "type": "string",
+      "description": "Contact person\u2019s name, phone, and email"
+    }
+  },
+  "required": [
+    "1. Details of the listed entity",
+    "2. Corporate Identity Number (CIN) of the Listed Entity",
+    "3. Year of Incorporation",
+    "4. Registered office address",
+    "6. Email",
+    "9. Financial year for which reporting is being done"
+  ],
+  "additionalProperties": false
+}

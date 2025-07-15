@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BRSR - Section C P7",
+  "type": "object",
+  "properties": {
+    "Function": {
+      "type": "string",
+      "description": "Code"
+    },
+    "Corporate": {
+      "type": "string",
+      "description": "C-P7-L1"
+    },
+    "nan": {
+      "type": "string",
+      "description": "nan"
+    }
+  },
+  "required": [
+    "Function",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate"
+  ],
+  "additionalProperties": false
+}

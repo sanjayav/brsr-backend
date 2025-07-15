@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BRSR - Section C P4",
+  "type": "object",
+  "properties": {
+    "Corporate": {
+      "type": "string",
+      "description": "C-P4-E2"
+    },
+    "nan": {
+      "type": "string",
+      "description": "nan"
+    },
+    "EHS": {
+      "type": "string",
+      "description": "C-P4-L3"
+    }
+  },
+  "required": [
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "EHS",
+    "EHS",
+    "nan",
+    "EHS",
+    "nan",
+    "EHS"
+  ],
+  "additionalProperties": false
+}

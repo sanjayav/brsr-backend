@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BRSR - Section C P2",
+  "type": "object",
+  "properties": {
+    "Corporate": {
+      "type": "string",
+      "description": "C-P2-L1"
+    },
+    "nan": {
+      "type": "string",
+      "description": "nan"
+    },
+    "Finance": {
+      "type": "string",
+      "description": "C-P2-E1"
+    },
+    "Procurement": {
+      "type": "string",
+      "description": "C-P2-E2"
+    },
+    "EHS": {
+      "type": "string",
+      "description": "C-P2-L2"
+    },
+    "Operations": {
+      "type": "string",
+      "description": "C-P2-L5"
+    }
+  },
+  "required": [
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Finance",
+    "Finance",
+    "Finance",
+    "Finance",
+    "nan",
+    "Procurement",
+    "Procurement",
+    "nan",
+    "EHS",
+    "EHS",
+    "EHS",
+    "EHS",
+    "EHS",
+    "nan",
+    "EHS",
+    "nan",
+    "Corporate",
+    "nan",
+    "EHS",
+    "EHS",
+    "nan",
+    "nan",
+    "nan",
+    "EHS",
+    "EHS",
+    "EHS",
+    "EHS",
+    "nan",
+    "Operations",
+    "Operations",
+    "Operations",
+    "Operations",
+    "Operations",
+    "nan",
+    "Operations",
+    "Operations",
+    "Operations",
+    "Operations",
+    "Operations",
+    "Operations",
+    "Operations",
+    "nan",
+    "Operations",
+    "Operations",
+    "Operations",
+    "Operations"
+  ],
+  "additionalProperties": false
+}

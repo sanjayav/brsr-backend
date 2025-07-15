@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BRSR - Section C P8",
+  "type": "object",
+  "properties": {
+    "Corporate": {
+      "type": "string",
+      "description": "C-P8-L5"
+    },
+    "nan": {
+      "type": "string",
+      "description": "nan"
+    },
+    "Procurement": {
+      "type": "string",
+      "description": "C-P8-E4"
+    },
+    "HR": {
+      "type": "string",
+      "description": "C-P8-E5"
+    },
+    "CSR": {
+      "type": "string",
+      "description": "C-P8-L6"
+    }
+  },
+  "required": [
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "nan",
+    "Procurement",
+    "Procurement",
+    "Procurement",
+    "Procurement",
+    "nan",
+    "HR",
+    "HR",
+    "HR",
+    "HR",
+    "HR",
+    "HR",
+    "HR",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "CSR",
+    "CSR",
+    "CSR",
+    "CSR",
+    "nan",
+    "CSR",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "CSR",
+    "CSR",
+    "CSR",
+    "CSR",
+    "CSR",
+    "CSR",
+    "CSR"
+  ],
+  "additionalProperties": false
+}

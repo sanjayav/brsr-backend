@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BRSR - Section C P1",
+  "type": "object",
+  "properties": {
+    "nan": {
+      "type": "string",
+      "description": "nan"
+    },
+    "Corporate": {
+      "type": "string",
+      "description": "C-P1-L2"
+    },
+    "HR": {
+      "type": "string",
+      "description": "C-P1-E4"
+    },
+    "Legal": {
+      "type": "string",
+      "description": "C-P1-E8"
+    },
+    "Sales": {
+      "type": "string",
+      "description": "C-P1-E9"
+    },
+    "Procurement": {
+      "type": "string",
+      "description": "C-P1-E9"
+    },
+    "Finance": {
+      "type": "string",
+      "description": "C-P1-E9"
+    }
+  },
+  "required": [
+    "nan",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "HR",
+    "HR",
+    "HR",
+    "HR",
+    "HR",
+    "HR",
+    "nan",
+    "Corporate",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "nan",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "nan",
+    "HR",
+    "nan",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "nan",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "Legal",
+    "nan",
+    "Legal",
+    "nan",
+    "Legal",
+    "Legal",
+    "Legal",
+    "nan",
+    "Sales",
+    "Sales",
+    "Sales",
+    "Procurement",
+    "Procurement",
+    "Procurement",
+    "Sales",
+    "Sales",
+    "Sales",
+    "Finance",
+    "Finance",
+    "Finance",
+    "Finance",
+    "nan",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "nan",
+    "Corporate"
+  ],
+  "additionalProperties": false
+}

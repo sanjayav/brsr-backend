@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BRSR - Section B",
+  "type": "object",
+  "properties": {
+    "Corporate": {
+      "type": "string",
+      "description": "B-II-23"
+    },
+    "Admin": {
+      "type": "string",
+      "description": "B-I-1"
+    },
+    "EHS": {
+      "type": "string",
+      "description": "B-I-4"
+    },
+    "nan": {
+      "type": "string",
+      "description": "nan"
+    }
+  },
+  "required": [
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Admin",
+    "Corporate",
+    "Corporate",
+    "EHS",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "nan",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate",
+    "Corporate"
+  ],
+  "additionalProperties": false
+}
